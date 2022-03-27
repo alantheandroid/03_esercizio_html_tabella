@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lezione HTML</title>
-</head>
 
+    <!-- TABLE BORDERS' STYLING-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
 <body>
     
-</body>
+    <table style="width: 25%" class="center">
+        <thead>
+            <th colspan="3">Entrate/uscite mensili</th>
+        </thead>
 
+        <tbody>
+
+            <tr>
+                <th>Mesi</th>
+                <th>Entrate</th>
+                <th>Uscite</th>
+            </tr>
+            <tr>
+                <td>Gennaio</td>
+                <td>440</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Febbraio</td>
+                <td>440</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td>1000</td>
+                <td>200</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>1880</td>
+                <td>350</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
 </html>
